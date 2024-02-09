@@ -1,0 +1,1 @@
+{"name":"Local: C03007","url":"c:\\Users\\admin\\OneDrive\\CodePTIT\\C03\\C03007.c","tests":[{"id":1707409899277,"input":"3\n20 1234\n123 140\n1 100000","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\admin\\OneDrive\\CodePTIT\\C03\\C03007.c","group":"local","local":true}
