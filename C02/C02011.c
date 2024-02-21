@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #define LL long long
 #define hhtuan "hhtuann"
-#define inf int(1e9 + 7)
-#define nmax int(1e6 + 7)
+#define inf (int)(1e9 + 7)
+#define nmax (int)(1e6 + 7)
 /* ...............................
 hhtuann._
 ______ Hoang Hoang Tuan ______
