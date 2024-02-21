@@ -12,26 +12,21 @@ __ Take Off Toward Your Dream ! __
 int main()
 {
     // input
-    int n, a[10000];
+    int n, k;
+    int a[10000];
     scanf("%d", &n);
     for (int i = 1; i <= n; i++)
     {
         scanf("%d", &a[i]);
     }
-    int min1 = a[1];
-    int min2 = inf;
-    for (int i = 2; i <= n; i++)
+    scanf("%d", &k);
+    for (int i = k + 1; i <= n; i++)
     {
-        if (a[i] < min1)
-        {
-            min2 = min1;
-            min1 = a[i];
-        }
-        else if (a[i] > min1 && a[i] < min2)
-        {
-            min2 = a[i];
-        }
+        printf("%d ", a[i]);
     }
-    printf("%d %d", min1, min2);
+    for (int i = 1; i <= k; i++)
+    {
+        printf("%d ", a[i]);
+    }
     return 0;
 }

@@ -9,29 +9,39 @@ hhtuann._
 ________ Hoang Hoang Tuan ________
 __ Take Off Toward Your Dream ! __
 ............................... */
+int a[100000];
+int cnt[1000000];
+int isPrime(int n)
+{
+    if (n < 2)
+        return 0;
+    for (int i = 2; i * i <= n; i++)
+    {
+        if (n % i == 0)
+            return 0;
+    }
+    return 1;
+}
 int main()
 {
     // input
-    int n, a[10000];
+    int n;
     scanf("%d", &n);
+    int ans = 0;
     for (int i = 1; i <= n; i++)
     {
         scanf("%d", &a[i]);
+        if (isPrime(a[i]))
+        {
+            cnt[a[i]] = 1;
+            ans++;
+        }
     }
-    int min1 = a[1];
-    int min2 = inf;
-    for (int i = 2; i <= n; i++)
+    printf("%d ", ans);
+    for (int i = 1; i <= n; i++)
     {
-        if (a[i] < min1)
-        {
-            min2 = min1;
-            min1 = a[i];
-        }
-        else if (a[i] > min1 && a[i] < min2)
-        {
-            min2 = a[i];
-        }
+        if (cnt[a[i]])
+            printf("%d ", a[i]);
     }
-    printf("%d %d", min1, min2);
     return 0;
 }

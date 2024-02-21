@@ -9,29 +9,37 @@ hhtuann._
 ________ Hoang Hoang Tuan ________
 __ Take Off Toward Your Dream ! __
 ............................... */
-int main()
+int a[100000];
+int cnt[1000000];
+void solve()
 {
-    // input
-    int n, a[10000];
+    int n;
     scanf("%d", &n);
     for (int i = 1; i <= n; i++)
     {
         scanf("%d", &a[i]);
+        cnt[a[i]]++;
     }
-    int min1 = a[1];
-    int min2 = inf;
-    for (int i = 2; i <= n; i++)
+    int check = 0;
+    for (int i = 1; i <= n; i++)
     {
-        if (a[i] < min1)
+        if (cnt[a[i]])
         {
-            min2 = min1;
-            min1 = a[i];
-        }
-        else if (a[i] > min1 && a[i] < min2)
-        {
-            min2 = a[i];
+            printf("%d xuat hien %d lan\n", a[i], cnt[a[i]]);
+            cnt[a[i]] = 0;
         }
     }
-    printf("%d %d", min1, min2);
+}
+int main()
+{
+    // input
+    int test;
+    scanf("%d", &test);
+    for (int i = 1; i <= test; i++)
+    {
+        printf("Test %d:\n", i);
+        solve();
+    }
+
     return 0;
 }

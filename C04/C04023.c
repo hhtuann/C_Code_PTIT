@@ -9,29 +9,35 @@ hhtuann._
 ________ Hoang Hoang Tuan ________
 __ Take Off Toward Your Dream ! __
 ............................... */
+void BubbleSort(int a[], int n)
+{
+    for (int i = n - 1; i > 0; i--)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            if (a[j] > a[j + 1])
+            {
+                int tmp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = tmp;
+            }
+        }
+    }
+}
 int main()
 {
     // input
-    int n, a[10000];
+    int n;
+    int a[10000];
     scanf("%d", &n);
     for (int i = 1; i <= n; i++)
     {
         scanf("%d", &a[i]);
     }
-    int min1 = a[1];
-    int min2 = inf;
-    for (int i = 2; i <= n; i++)
+    BubbleSort(a, n);
+    for (int i = 1; i <= n; i++)
     {
-        if (a[i] < min1)
-        {
-            min2 = min1;
-            min1 = a[i];
-        }
-        else if (a[i] > min1 && a[i] < min2)
-        {
-            min2 = a[i];
-        }
+        printf("%d ", a[i]);
     }
-    printf("%d %d", min1, min2);
     return 0;
 }
