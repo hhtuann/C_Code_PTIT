@@ -21,66 +21,9 @@ int isPrime(int n)
     }
     return 1;
 }
-void threeDigits()
-{
-    for (int i = 1; i <= 9; i += 2)
-    {
-        int n = i;
-        for (int j = 0; j <= 9; j++)
-        {
-            int k = n * 10 + j;
-            k = k * 10 + i; /// iji
-            if (isPrime(k))
-            {
-                p[k] = 1;
-            }
-        }
-    }
-}
-void fourDigits()
-{
-    for (int i = 1; i <= 9; i += 2)
-    {
-        int n = i;
-        for (int j = 0; j <= 9; j++)
-        {
-            int k = n * 10 + j;
-            k = k * 10 + j;
-            k = k * 10 + i; /// ijji
-            if (isPrime(k))
-            {
-                p[k] = 1;
-            }
-        }
-    }
-}
-void fiveDigits()
-{
-    for (int i = 1; i <= 9; i += 2)
-    {
-        int n = i;
-        for (int j = 0; j <= 9; j++)
-        {
-            int k = n * 10 + j;
-            for (int x = 0; x <= 9; x++)
-            {
-                int t = k * 10 + x;
-                t = t * 10 + j;
-                t = t * 10 + i; /// ijxji
-                if (isPrime(t))
-                {
-                    p[t] = 1;
-                }
-            }
-        }
-    }
-}
+
 void SoThuanNghich()
 {
-    p[2] = p[5] = p[7] = p[11] = 1;
-    threeDigits();
-    fourDigits();
-    fiveDigits();
 }
 int main()
 {
@@ -95,7 +38,13 @@ int main()
         scanf("%d %d", &a, &b);
         for (int i = a; i <= b; i++)
         {
-            if (p[i] == 1)
+            int n = i, new = 0;
+            while (n != 0)
+            {
+                new = new * 10 + n % 10;
+                n /= 10;
+            }
+            if (new == i && isPrime(new))
             {
                 cnt++;
                 if (cnt > 10)
