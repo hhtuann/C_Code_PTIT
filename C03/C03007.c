@@ -9,7 +9,7 @@ hhtuann._
 ______ Hoang Hoang Tuan ______
 _ Take Off Toward Your Dream ! _
 ............................... */
-int p[1000006] = {0};
+
 int isPrime(int n)
 {
     if (n < 2)
@@ -21,13 +21,8 @@ int isPrime(int n)
     }
     return 1;
 }
-
-void SoThuanNghich()
-{
-}
 int main()
 {
-    SoThuanNghich();
     // input
     int test;
     scanf("%d", &test);
