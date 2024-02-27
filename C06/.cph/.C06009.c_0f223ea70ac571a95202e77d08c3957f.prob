@@ -1,1 +1,0 @@
-{"name":"Local: C06009","url":"d:\\C_Code_PTIT\\C06\\C06009.c","tests":[{"id":1708978153212,"input":"7\n29-T1 123.45\n29-T1 555.55\n29-T1 222.33\n29-T1 686.88\n29-T1 123.33\n29-T1 555.54\n29-T1 606.88","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\C_Code_PTIT\\C06\\C06009.c","group":"local","local":true}

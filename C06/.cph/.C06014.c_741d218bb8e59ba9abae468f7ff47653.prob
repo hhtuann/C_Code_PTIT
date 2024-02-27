@@ -1,1 +1,0 @@
-{"name":"Local: C06014","url":"d:\\C_Code_PTIT\\C06\\C06014.c","tests":[{"id":1708979166048,"input":"4\n    nGUYEn    quaNG   vInH  \n   tRan   thi THU    huOnG\n   nGO   quoC  VINH\n lE            tuAn    aNH","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\C_Code_PTIT\\C06\\C06014.c","group":"local","local":true}
