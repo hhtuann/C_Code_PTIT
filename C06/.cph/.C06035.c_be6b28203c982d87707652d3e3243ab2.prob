@@ -1,1 +1,0 @@
-{"name":"Local: C06035","url":"d:\\C_Code_PTIT\\C06\\C06035.c","tests":[{"id":1709053905238,"input":"3\nabccaa\nabbcca\nabcba","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\C_Code_PTIT\\C06\\C06035.c","group":"local","local":true}
