@@ -33,24 +33,16 @@ int main()
         // x ngang
         // y dọc
         int x = n * m;
-        while (1)
+        while (x)
         {
-            for (int i = left_x; i <= right_x; i++, x--)
+            for (int i = left_x; i <= right_x && x > 0; i++, x--)
                 printf("%d ", a[left_y][i]);
-            if (x == 0)
-                break;
-            for (int i = left_y + 1; i <= right_y; i++, x--)
+            for (int i = left_y + 1; i <= right_y && x > 0; i++, x--)
                 printf("%d ", a[i][right_x]);
-            if (x == 0)
-                break;
-            for (int i = right_x - 1; i >= left_x; i--, x--)
+            for (int i = right_x - 1; i >= left_x && x > 0; i--, x--)
                 printf("%d ", a[right_y][i]);
-            if (x == 0)
-                break;
-            for (int i = right_y - 1; i > left_y; i--, x--)
+            for (int i = right_y - 1; i > left_y && x > 0; i--, x--)
                 printf("%d ", a[i][left_x]);
-            if (x == 0)
-                break;
             left_x++;
             left_y++;
             right_x--;
