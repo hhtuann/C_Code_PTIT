@@ -36,7 +36,7 @@ void solve(char *s1, char *s2)
     if (strcmp(s1, s2) == 0)
     {
         printf("0\n");
-        return 0;
+        return;
     }
     if (strcmp(s1, s2) < 0)
     {
@@ -64,6 +64,7 @@ void solve(char *s1, char *s2)
     while (diff[0] == '0')
         removeZero(diff);
     printf("%s\n", diff);
+    return;
 }
 int main()
 {
