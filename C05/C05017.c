@@ -10,23 +10,22 @@ ________ Hoang Hoang Tuan ________
 __ Take Off Toward Your Dream ! __
 ............................... */
 int a[1005][1005];
-void solve(int *n, int *m)
+void solve(int n, int m)
 {
-    scanf("%d %d", n, m);
-    for (int i = 1; i <= *n; i++)
+    for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= *m; j++)
+        for (int j = 1; j <= m; j++)
         {
             scanf("%d", &a[i][j]);
         }
     }
     int left_x = 1; // góc trên bên trái
     int left_y = 1;
-    int right_x = *m; // góc dưới bên phải;
-    int right_y = *n;
+    int right_x = m; // góc dưới bên phải;
+    int right_y = n;
     // x ngang
     // y dọc
-    int x = (*n) * (*m);
+    int x = n * m;
     while (x)
     {
         for (int i = left_x; i <= right_x && x > 0; i++, x--)
@@ -51,7 +50,8 @@ int main()
     while (test--)
     {
         int n, m;
-        solve(&n, &m);
+        scanf("%d %d", &n, &m);
+        solve(n, m);
         printf("\n");
     }
     return 0;
