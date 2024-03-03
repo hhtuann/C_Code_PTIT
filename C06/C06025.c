@@ -66,6 +66,7 @@ void solve(char *s1, char *s2)
     printf("%s\n", diff);
     return;
 }
+
 int main()
 {
     // input
