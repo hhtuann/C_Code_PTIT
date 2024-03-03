@@ -10,7 +10,9 @@ hhtuann._
 ________ Hoang Hoang Tuan ________
 __ Take Off Toward Your Dream ! __
 ............................... */
+
 char s[1000005];
+
 int main()
 {
     // input
