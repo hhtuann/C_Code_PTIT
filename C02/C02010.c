@@ -9,10 +9,7 @@ hhtuann._
 ______ Hoang Hoang Tuan ______
 _ Take Off Toward Your Dream ! _
 ............................... */
-int Min(int a, int b)
-{
-    return a < b ? a : b;
-}
+
 int main()
 {
     // input
@@ -21,10 +18,13 @@ int main()
     for (int i = 1; i <= m; i++)
     {
         printf("%d", i);
-        for (int j = i + 1; j <= n; j++)
-            printf("%d", j);
-        for (int j = Min(i - 1, n - 1); j > 0; j--)
-            printf("%d", j);
+        for (int j = n - 1; j > 0; j--)
+        {
+            if(i + n - j <= n) 
+                printf("%d", i + n - j);
+            else 
+                printf("%d", j);
+        }
         printf("\n");
     }
     return 0;
