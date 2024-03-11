@@ -11,10 +11,8 @@ __ Take Off Toward Your Dream ! __
 ............................... */
 int isPrime(int n)
 {
-    if (n <= 1)
+    if (n < 2)
         return 0;
-    if (n < 4)
-        return 1;
     for (int i = 2; i * i <= n; i++)
     {
         if (n % i == 0)
