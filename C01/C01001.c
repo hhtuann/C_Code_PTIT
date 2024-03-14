@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #define LL long long
 #define hhtuan "hhtuann"
 #define inf (int)(1e9 + 7)
