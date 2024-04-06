@@ -1,14 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
 #define LL long long
 #define hhtuan "hhtuann"
-#define inf (int)(1e9 + 7)
-#define nmax (int)(1e6 + 7)
-/* ...............................
-hhtuann._
-______ Hoang Hoang Tuan ______
-_ Take Off Toward Your Dream ! _
-............................... */
+
+// ig: hhtuann._
+// Hoang Hoang Tuan
+// Take Off Toward Your Dream !
 
 int main()
 {
@@ -20,9 +16,9 @@ int main()
         printf("%d", i);
         for (int j = n - 1; j > 0; j--)
         {
-            if(i + n - j <= n) 
+            if (i + n - j <= n)
                 printf("%d", i + n - j);
-            else 
+            else
                 printf("%d", j);
         }
         printf("\n");
