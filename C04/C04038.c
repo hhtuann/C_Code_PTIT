@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define LL long long
-#define hhtuan "hhtuann"
-#define inf (int)(1e9 + 7)
-#define nmax (int)(1e6 + 7)
-/* ...............................
-hhtuann._
-________ Hoang Hoang Tuan ________
-__ Take Off Toward Your Dream ! __
-............................... */
+#define hhtuann "hhtuann"
+
+// ig: hhtuann._
+// Hoang Hoang Tuan
+// Take Off Toward Your Dream !
+
 void SelectionSort2(int *a, int n)
 {
     for (int i = 1; i < n; i++)
@@ -17,7 +15,7 @@ void SelectionSort2(int *a, int n)
         int min = a[i];
         for (int j = i + 1; j <= n; j++)
         {
-            if(a[j] < min)
+            if (a[j] < min)
             {
                 min = a[j];
                 pos = j;
@@ -26,7 +24,7 @@ void SelectionSort2(int *a, int n)
         int tmp = a[i];
         a[i] = a[pos];
         a[pos] = tmp;
-        //printf("Buoc %d:", i);
+        // printf("Buoc %d:", i);
         for (int i = 1; i <= n; i++)
         {
             printf("%d ", a[i]);

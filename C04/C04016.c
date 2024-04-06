@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define LL long long
-#define hhtuan "hhtuann"
-#define inf (int)(1e9 + 7)
-#define nmax (int)(1e6 + 7)
-/* ...............................
-hhtuann._
-________ Hoang Hoang Tuan ________
-__ Take Off Toward Your Dream ! __
-............................... */
+#define hhtuann "hhtuann"
+
+// ig: hhtuann._
+// Hoang Hoang Tuan
+// Take Off Toward Your Dream !
+
+const int inf = (int)(1e9 + 7);
 int a[100000];
 int cnt[1000000];
+
 int isPrime(int n)
 {
     if (n < 2)
@@ -32,7 +32,8 @@ void solve()
         scanf("%d", &a[i]);
         if (isPrime(a[i]))
             cnt[a[i]]++;
-        if(a[i]> maxx) maxx = a[i];
+        if (a[i] > maxx)
+            maxx = a[i];
     }
     for (int i = 1; i <= maxx; i++)
     {
