@@ -1,21 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define LL long long
-#define hhtuan "hhtuann"
-#define inf (int)(1e9 + 7)
-#define nmax (int)(1e6 + 7)
-/* ...............................
-hhtuann._
-________ Hoang Hoang Tuan ________
-__ Take Off Toward Your Dream ! __
-............................... */
-void swap(int *a, int *b)
-{
-    int c = *a;
-    *a = *b;
-    *b = c;
-}
+#define hhtuann "hhtuann"
+
+// ig: hhtuann._
+// Hoang Hoang Tuan
+// Take Off Toward Your Dream !
+
 int a[1005][1005];
+
+void swap(int *x, int *y)
+{
+    int c = *x;
+    *x = *y;
+    *y = c;
+}
 int main()
 {
     // input

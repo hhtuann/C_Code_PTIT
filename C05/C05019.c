@@ -1,22 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define LL long long
-#define hhtuan "hhtuann"
-#define inf (int)(1e9 + 7)
-#define nmax (int)(1e6 + 7)
-/* ...............................
-hhtuann._
-________ Hoang Hoang Tuan ________
-__ Take Off Toward Your Dream ! __
-............................... */
+#define hhtuann "hhtuann"
+
+// ig: hhtuann._
+// Hoang Hoang Tuan
+// Take Off Toward Your Dream !
+
 int a[1005][1005];
 int p[1000];
+
 void solve(int n)
 {
     int left = 1;  // góc trên bên trái
     int right = n; // góc dướI bên phải;
     int x = 1;
-    while (x <= n*n)
+    while (x <= n * n)
     {
         for (int i = left; i <= right; i++)
             a[left][i] = p[x++];
