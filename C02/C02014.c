@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 #define LL long long
 #define hhtuann "hhtuann"
 

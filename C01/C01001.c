@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define LL long long
-#define hhtuan "hhtuann"
+#define hhtuann "hhtuann"
 
 // ig: hhtuann._
 // Hoang Hoang Tuan
