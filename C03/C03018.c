@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define LL long long
-#define hhtuan "hhtuann"
-#define inf (int)(1e9 + 7)
-#define nmax (int)(1e6 + 7)
-/* ...............................
-hhtuann._
-______ Hoang Hoang Tuan ______
-_ Take Off Toward Your Dream ! _
-............................... */
+#define hhtuann "hhtuann"
+
+// ig: hhtuann._
+// Hoang Hoang Tuan
+// Take Off Toward Your Dream !
+
 LL f[1005];
+
 void Fibo()
 {
     f[0] = f[1] = f[2] = f[3] = f[5] = f[8] = f[13] = f[21] = 1;

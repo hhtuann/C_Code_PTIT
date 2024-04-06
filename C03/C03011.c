@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define LL long long
-#define hhtuan "hhtuann"
-#define inf (int)(1e9 + 7)
-#define nmax (int)(1e6 + 7)
-/* ...............................
-hhtuann._
-______ Hoang Hoang Tuan ______
-_ Take Off Toward Your Dream ! _
-............................... */
+#define hhtuann "hhtuann"
+
+// ig: hhtuann._
+// Hoang Hoang Tuan
+// Take Off Toward Your Dream !
+
 int gt[20] = {1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880};
+
 int StrongNum(int n)
 {
     int sum = 0;
