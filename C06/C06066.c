@@ -2,14 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #define LL long long
-#define hhtuan "hhtuann"
-#define inf (int)(1e9 + 7)
-#define nmax (int)(1e6 + 7)
-/* ...............................
-hhtuann._
-________ Hoang Hoang Tuan ________
-__ Take Off Toward Your Dream ! __
-............................... */
+#define hhtuann "hhtuann"
+
+// ig: hhtuann._
+// Hoang Hoang Tuan
+// Take Off Toward Your Dream !
+
 void addZero(char s[])
 {
     for (int i = strlen(s); i > 0; i--)
@@ -59,7 +57,7 @@ int main()
     // input
     char s[1000];
     gets(s);
-    while(strlen(s) > 1)
+    while (strlen(s) > 1)
     {
         solve(s);
         printf("%s\n", s);

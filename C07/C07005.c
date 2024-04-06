@@ -2,14 +2,12 @@
 #include <stdlib.h>
 #include <math.h>
 #define LL long long
-#define hhtuan "hhtuann"
-#define inf (int)(1e9 + 7)
-#define nmax (int)(1e6 + 7)
-/* ...............................
-hhtuann._
-________ Hoang Hoang Tuan ________
-__ Take Off Toward Your Dream ! __
-............................... */
+#define hhtuann "hhtuann"
+
+// ig: hhtuann._
+// Hoang Hoang Tuan
+// Take Off Toward Your Dream !
+
 int thangHang(double a1, double b1, double a2, double b2, double a3, double b3)
 {
     return (a2 - a1) * (b3 - b1) == (a3 - a1) * (b2 - b1);

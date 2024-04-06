@@ -2,14 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 #define LL long long
-#define hhtuan "hhtuann"
-#define inf (int)(1e9 + 7)
-#define nmax (int)(1e6 + 7)
-/* ...............................
-hhtuann._
-________ Hoang Hoang Tuan ________
-__ Take Off Toward Your Dream ! __
-............................... */
+#define hhtuann "hhtuann"
+
+// ig: hhtuann._
+// Hoang Hoang Tuan
+// Take Off Toward Your Dream !
 
 struct Product
 {
@@ -18,6 +15,7 @@ struct Product
     char group[1000];
     float profit;
 } a[10000];
+
 int main()
 {
     // input

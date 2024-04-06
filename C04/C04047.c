@@ -11,6 +11,7 @@ struct Guest
 {
     int t, d;
 } a[1000], tmp;
+
 void BubbleSort(int n)
 {
     for (int i = n - 1; i > 0; i--)

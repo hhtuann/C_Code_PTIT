@@ -8,6 +8,7 @@
 // Take Off Toward Your Dream !
 
 int prime[1000006] = {0};
+
 void isPrime(int n)
 {
     prime[0] = prime[1] = 1;

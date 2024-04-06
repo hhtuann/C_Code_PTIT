@@ -8,6 +8,7 @@
 // Take Off Toward Your Dream !
 
 int a[10000];
+
 int min(int a, int b)
 {
     return a < b ? a : b;

@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-/* ...............................
-hhtuann._
-________ Hoang Hoang Tuan ________
-__ Take Off Toward Your Dream ! __
-............................... */
+#define LL long long
+#define hhtuann "hhtuann"
+
+// ig: hhtuann._
+// Hoang Hoang Tuan
+// Take Off Toward Your Dream !
+
 int main()
 {
     // input

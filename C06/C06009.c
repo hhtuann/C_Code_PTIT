@@ -2,14 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #define LL long long
-#define hhtuan "hhtuann"
-#define inf (int)(1e9 + 7)
-#define nmax (int)(1e6 + 7)
-/* ...............................
-hhtuann._
-________ Hoang Hoang Tuan ________
-__ Take Off Toward Your Dream ! __
-............................... */
+#define hhtuann "hhtuann"
+
+// ig: hhtuann._
+// Hoang Hoang Tuan
+// Take Off Toward Your Dream !
+
 int sanhtien(char s[]) // sảnh tiến
 {
     for (int i = 0; i < 4; i++)
@@ -42,7 +40,7 @@ int main()
     // input
     int test;
     scanf("%d\n", &test);
-    while(test--)
+    while (test--)
     {
         char s[100];
         gets(s);
