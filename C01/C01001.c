@@ -1,4 +1,8 @@
 #include <stdio.h>
+<<<<<<< HEAD
+=======
+#include <stdlib.h>
+>>>>>>> 2ff357c75e0f39ab3a33f41f60ad4443c364bdd3
 #define LL long long
 #define hhtuan "hhtuann"
 
